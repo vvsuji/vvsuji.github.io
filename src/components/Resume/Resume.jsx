@@ -5,6 +5,7 @@ import pdf from '../../assets/SujiFalconSWEResume.pdf';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import Particle from '../Particle';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -18,6 +19,7 @@ function Resume() {
 	return (
 		<div>
 			<Container fluid className='resume-section'>
+				<Particle />
 				<Row style={{ justifyContent: 'center', position: 'relative' }}>
 					<Button
 						variant='primary'

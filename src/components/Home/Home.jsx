@@ -1,12 +1,14 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Home2 from './Home2';
-import Type from './Type';
+import Particle from '../Particle';
+
 
 function Home() {
 	return (
 		<section>
 			<Container fluid className='home-section' id='home'>
+				<Particle />
 				<Container className='home-content'>
 					<Row>
 						<Col md={12} className='home-header'>
@@ -18,10 +20,7 @@ function Home() {
 								I'm
 								<strong className='main-name'> Suji Falcon </strong>
 							</h1>
-
-							<div style={{ padding: 50, textAlign: 'left' }}>
-								<Type />
-							</div>
+							<div style={{ padding: 50, textAlign: 'left' }}></div>
 						</Col>
 					</Row>
 				</Container>
