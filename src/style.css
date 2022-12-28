@@ -14,6 +14,10 @@ html {
   --imp-text-color: #c770f0;
 }
 
+body {
+  height: 100%;
+}
+
 .purple {
   color: var(--imp-text-color) !important;
 }
@@ -242,13 +246,14 @@ button:focus {
     transform: rotate(0deg);
   }
 }
-#tsparticles {
+/* #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   width: 100%;
   height: 100%;
-}
+  overflow: auto;
+} */
 
 .home-header {
   padding-top: 80px !important;

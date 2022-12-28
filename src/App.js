@@ -31,7 +31,6 @@ function App() {
 
 	return (
 		<Router>
-			<Particle />
 			<Preloader load={load} />
 			<div className='App' id={load ? 'no-scroll' : 'scroll'}>
 				<Navbar />
