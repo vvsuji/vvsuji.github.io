@@ -36,7 +36,7 @@ function App() {
 				<Navbar />
 				<ScrollToTop />
 				<Routes>
-					<Route path='/vvsuji.github.io' element={<Home />} />
+					<Route path='/vvsuj2-portfolio' element={<Home />} />
 					<Route path='/project' element={<Projects />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/resume' element={<Resume />} />
