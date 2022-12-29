@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import { CgGitFork } from 'react-icons/cg';
-import logo from '../../assets/full_name.png';
+import logo from '../../assets/sflogo.png';
 import Button from 'react-bootstrap/Button';
 import {
 	AiFillStar,
@@ -17,7 +17,13 @@ function NavBar() {
 	return (
 		<div className='navbar'>
 			<Link to='/'>
-				<img src={logo} className='logo initials' alt='logo' width={'100px'} />
+				<img
+					src={logo}
+					className='logo initials'
+					alt='logo'
+					width={'500px'}
+					height={'500px'}
+				/>
 			</Link>
 
 			<div className='links-container'>
