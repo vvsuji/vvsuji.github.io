@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Home2 from './Home2';
-import Particle from '../Particle';
+// import Particle from '../Particle';
 
 
 function Home() {
 	return (
 		<section>
 			<Container fluid className='home-section' id='home'>
-				<Particle />
+				{/* <Particle /> */}
 				<Container className='home-content'>
 					<Row>
 						<Col md={12} className='home-header'>

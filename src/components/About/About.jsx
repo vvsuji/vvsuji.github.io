@@ -3,12 +3,12 @@ import {Container, Row, Col} from "react-bootstrap";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import Particle from '../Particle';
+// import Particle from '../Particle';
 
 function About() {
 	return (
 		<Container fluid className='about-section'>
-			<Particle />
+			{/* <Particle /> */}
 			<Container>
 				<Row style={{ justifyContent: 'center', padding: '10px' }}>
 					<Col
