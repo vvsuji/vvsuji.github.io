@@ -1,16 +1,15 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiDjango,
-  DiFlask,
-  DiPostgresql
-} from "react-icons/di";
+	DiJavascript1,
+	DiReact,
+	DiNodejs,
+	DiMongodb,
+	DiPython,
+	DiGit,
+	DiDjango,
+	DiPostgresql,
+} from 'react-icons/di';
 
 
 function Techstack() {
