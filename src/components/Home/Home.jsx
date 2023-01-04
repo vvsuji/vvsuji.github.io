@@ -11,12 +11,12 @@ function Home() {
 				<Container className='home-content'>
 					<Row>
 						<Col md={7} className='home-header'>
-							<h1 style={{ paddingBottom: 15 }} className='heading'>
-								Hello There!{' '}
-							</h1>
+							{/* <h1 style={{ paddingBottom: 15 }} className='heading'>
+								Hi!{' '}
+							</h1> */}
 
 							<h1 className='heading-name'>
-								I'm
+								Hi! I'm
 								<strong className='main-name'> Suji Falcon </strong>
 							</h1>
 							<div style={{ padding: 50, textAlign: 'left' }}></div>
@@ -27,7 +27,7 @@ function Home() {
 								src={pfp}
 								alt='home pic'
 								className='img-fluid'
-								style={{ maxHeight: '450px' }}
+								style={{ maxHeight: '450px', borderRadius: '99px' }}
 							/>
 						</Col>
 					</Row>
