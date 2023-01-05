@@ -282,7 +282,7 @@ button:focus {
 
 .heading-name {
   font-size: 2.5em !important;
-  padding-left: 45px !important;
+  margin-bottom: 0;
 }
 
 .main-name {
@@ -325,12 +325,12 @@ button:focus {
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-top: 30px !important;
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+  padding-top: 30px !important;
   padding-bottom: 20px !important;
   text-align: center;
 }

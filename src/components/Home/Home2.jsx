@@ -8,25 +8,6 @@ function Home2() {
 		<Container fluid className='home-about-section' id='about'>
 			<Container>
 				<Row>
-					<Col md={12} className='home-about-description'>
-						<p className='home-about-body'>
-							Software engineer with an extensive background in IT and game
-							modding. I fell in love with programming at the age of 10 making
-							websites for my friends. I found so much excitement with
-							programming which only motivated me to work harder and make it
-							into a career.
-							<br />
-							<br />I currently work with
-							<i>
-								<b className='gray'>
-									{' '}
-									Javascript, Python, React.js, HTML, CSS{' '}
-								</b>
-							</i>
-						</p>
-					</Col>
-				</Row>
-				<Row>
 					<Col md={12} className='home-about-social'>
 						<h2>CONNECT WITH ME</h2>
 						<br />
