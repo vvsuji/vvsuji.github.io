@@ -38,7 +38,9 @@ function Home() {
 								</i>
 							</p>
 						</Col>
-						<Col md={5} style={{ paddingBottom: 20 }}>
+						<Col
+							md={4}
+							style={{ paddingBottom: 20, position: 'absolute', right: 50 }}>
 							<img
 								src={pfp}
 								alt='home pic'
