@@ -7,8 +7,8 @@ import pfp from '../../assets/sfpfp.png';
 function Home() {
 	return (
 		<section>
-			<Container fluid className='home-section' id='home'>
-				<Container className='home-content'>
+			<Container fluid className='home-about-section' id='home'>
+				<Container className='home-content' style={{ left: 50 }}>
 					<Row>
 						<Col md={9} className='home-header'>
 							<h1 md={3} className='heading-name'>
@@ -33,7 +33,7 @@ function Home() {
 								</i>
 							</p>
 						</Col>
-						<Col md={4} style={{ position: 'absolute', right: 50 }}>
+						<Col md={4} style={{ position: 'absolute', right: 30 }}>
 							<img
 								src={pfp}
 								alt='home pic'
