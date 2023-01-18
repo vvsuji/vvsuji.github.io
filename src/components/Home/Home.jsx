@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Home2 from './Home2';
+import Contact from './Contact';
 import pfp from '../../assets/sfpfp.png';
-
 
 function Home() {
 	return (
@@ -44,7 +43,17 @@ function Home() {
 					</Row>
 				</Container>
 			</Container>
-			<Home2 />
+			<Container fluid className='home-about-section' id='about'>
+				<Container>
+					<Row>
+						<Col md={12} className='home-about-social'>
+							<h2>CONNECT WITH ME</h2>
+							<br />
+						</Col>
+					</Row>
+				</Container>
+			</Container>
+			<Contact />
 		</section>
 	);
 }
