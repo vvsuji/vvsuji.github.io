@@ -51,9 +51,9 @@ function Home() {
 							<br />
 						</Col>
 					</Row>
+					<Contact />
 				</Container>
 			</Container>
-			<Contact />
 		</section>
 	);
 }

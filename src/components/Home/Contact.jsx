@@ -9,13 +9,6 @@ const Contact = (props) => {
 	const [emailSent, setEmailSent] = useState(false);
 
 	if (props.data) {
-		var name = props.data.name;
-		var street = props.data.address.street;
-		var city = props.data.address.city;
-		var state = props.data.address.state;
-		var zip = props.data.address.zip;
-		var phone = props.data.phone;
-		var email = props.data.email;
 		var message = props.data.contactmessage;
 	}
 
@@ -70,7 +63,6 @@ const Contact = (props) => {
 									onChange={(e) => setContactName(e.target.value)}
 								/>
 							</div>
-
 							<div>
 								<label htmlFor='contactEmail'>
 									Email <span className='required'>*</span>
@@ -84,7 +76,6 @@ const Contact = (props) => {
 									onChange={(e) => setContactEmail(e.target.value)}
 								/>
 							</div>
-
 							<div>
 								<label htmlFor='contactMessage'>
 									Message <span className='required'>*</span>
@@ -99,9 +90,8 @@ const Contact = (props) => {
 										setContactMessage(e.target.value)
 									}></textarea>
 							</div>
-
 							<div>
-								<button className='submit'>Submit</button>
+								<button className='submit'>Send</button>
 								<span id='image-loader'>
 									<img alt='' src='images/loader.gif' />
 								</span>
@@ -109,25 +99,12 @@ const Contact = (props) => {
 						</fieldset>
 					</form>
 
-					<div id='message-warning'> Error boy</div>
+					{/* <div id='message-warning'> Error boy</div>
 					<div id='message-success'>
 						<i className='fa fa-check'></i>Your message was sent, thank you!
 						<br />
-					</div>
+					</div> */}
 				</div>
-
-				<aside className='four columns footer-widgets'>
-					<div className='widget widget_contact'>
-						<h4>Address and Phone</h4>
-						<p className='address'>
-							{name}
-							<br />
-							{city}, {state} {zip}
-							<br />
-							<span>{phone}</span>
-						</p>
-					</div>
-				</aside>
 			</div>
 		</section>
 	);
