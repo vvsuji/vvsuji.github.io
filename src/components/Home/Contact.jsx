@@ -36,12 +36,6 @@ const Contact = (props) => {
 
 	return (
 		<section id='contact'>
-			<div className='row section-head'>
-				<div className='ten columns'>
-					<p className='lead'>{message}</p>
-				</div>
-			</div>
-
 			<div className='row'>
 				<div className='eight columns'>
 					<form
