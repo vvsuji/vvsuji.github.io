@@ -324,7 +324,7 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
+  padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
 
@@ -343,7 +343,6 @@ button:focus {
 
 .home-about-social {
   text-align: center !important;
-  padding-top: 25px;
   color: white !important;
 }
 
