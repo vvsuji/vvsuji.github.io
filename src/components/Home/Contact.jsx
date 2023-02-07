@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 const Contact = (props) => {
@@ -44,18 +44,25 @@ const Contact = (props) => {
 						id='contactForm'
 						name='contactForm'>
 						<fieldset>
-							<div>
+							<div class='user-box'>
 								<label htmlFor='contactName'>
 									Name <span className='required'>*</span>
 								</label>
 								<input
+									required=''
+									name=''
 									type='text'
 									size='35'
 									id='contactName'
-									name='contactName'
+									// name='contactName'
 									value={contactName}
 									onChange={(e) => setContactName(e.target.value)}
 								/>
+								{/* 
+								<input
+									type='text'
+									
+								/> */}
 							</div>
 							<div>
 								<label htmlFor='contactEmail'>

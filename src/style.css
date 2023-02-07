@@ -406,7 +406,7 @@ button:focus {
 /* Contact */
 /* --------- */
 
-#contact {
+.login-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -420,7 +420,7 @@ button:focus {
   border-radius: 10px;
 }
 
-#contact p:first-child {
+.login-box p:first-child {
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
@@ -430,11 +430,11 @@ button:focus {
   letter-spacing: 1px;
 }
 
-#contact .user-box {
+.login-box .user-box {
   position: relative;
 }
 
-#contact .user-box input {
+.login-box .user-box input {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -446,7 +446,7 @@ button:focus {
   background: transparent;
 }
 
-#contact .user-box label {
+.login-box .user-box label {
   position: absolute;
   top: 0;
   left: 0;
@@ -457,15 +457,15 @@ button:focus {
   transition: .5s;
 }
 
-#contact .user-box input:focus ~ label,
-#contact .user-box input:valid ~ label {
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
   color: #fff;
   font-size: 12px;
 }
 
-#contact form a {
+.login-box form a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -480,18 +480,18 @@ button:focus {
   letter-spacing: 3px
 }
 
-#contact a:hover {
+.login-box a:hover {
   background: #fff;
   color: #272727;
   border-radius: 5px;
 }
 
-#contact a span {
+.login-box a span {
   position: absolute;
   display: block;
 }
 
-#contact a span:nth-child(1) {
+.login-box a span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -510,7 +510,7 @@ button:focus {
   }
 }
 
-#contact a span:nth-child(2) {
+.login-box a span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -530,7 +530,7 @@ button:focus {
   }
 }
 
-#contact a span:nth-child(3) {
+.login-box a span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -550,7 +550,7 @@ button:focus {
   }
 }
 
-#contact a span:nth-child(4) {
+.login-box a span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -570,17 +570,17 @@ button:focus {
   }
 }
 
-#contact p:last-child {
+.login-box p:last-child {
   color: #aaa;
   font-size: 14px;
 }
 
-#contact a.a2 {
+.login-box a.a2 {
   color: #fff;
   text-decoration: none;
 }
 
-#contact a.a2:hover {
+.login-box a.a2:hover {
   background: transparent;
   color: #aaa;
   border-radius: 5px;
