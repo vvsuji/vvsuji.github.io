@@ -44,8 +44,7 @@ function App() {
 					<Route path='/resume' element={<Resume />} />
 					<Route path='*' element={<Navigate to='/' />} />
 				</Routes>
-				{/* <Contact /> */}
-				<Footer />
+				{/* <Footer /> */}
 			</div>
 		</Router>
 	);

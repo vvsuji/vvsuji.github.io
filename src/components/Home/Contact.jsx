@@ -75,8 +75,8 @@ const Contact = (props) => {
 									Message <span className='required'>*</span>
 								</label>
 								<textarea
-									cols='50'
-									rows='15'
+									cols='34'
+									rows='5'
 									id='contactMessage'
 									name='contactMessage'
 									value={contactMessage}
