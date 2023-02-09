@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Contact from './Contact';
+import ContactForm from './Contact';
 import pfp from '../../assets/sfpfp.png';
 
 function Home() {
@@ -51,7 +51,7 @@ function Home() {
 							<br />
 						</Col>
 					</Row>
-					<Contact />
+					<ContactForm />
 				</Container>
 			</Container>
 		</section>
