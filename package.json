@@ -4,6 +4,9 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@emotion/react": "^11.10.5",
+		"@emotion/styled": "^11.10.5",
+		"@mui/material": "^5.11.8",
 		"@react-pdf-viewer/core": "^3.10.0",
 		"@react-pdf/renderer": "^3.0.1",
 		"@testing-library/jest-dom": "^5.16.5",
@@ -20,6 +23,7 @@
 		"react-pdf": "^6.2.0",
 		"react-router-dom": "^6.5.0",
 		"react-tsparticles": "^2.7.0",
+		"validate.js": "^0.13.1",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
