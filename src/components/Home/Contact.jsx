@@ -1,114 +1,140 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Typography, Grid, Button, TextField } from '@mui/material';
+import validate from 'validate.js';
 import emailjs from 'emailjs-com';
 
-const Contact = (props) => {
-	const [contactName, setContactName] = useState('');
-	const [contactEmail, setContactEmail] = useState('');
-	const [contactMessage, setContactMessage] = useState('');
-	const form = useRef();
-	const [emailSent, setEmailSent] = useState(false);
+const USER_ID = process.env.REACT_APP_EMAILJS_USERID;
+const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATEID;
+const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICEID;
 
-	if (props.data) {
-		var message = props.data.contactmessage;
-	}
+const schema = {
+	name: {
+		presence: { allowEmpty: false, message: 'is required' },
+		length: {
+			maximum: 128,
+		},
+	},
+	email: {
+		presence: { allowEmpty: false, message: 'is required' },
+		email: true,
+		length: {
+			maximum: 300,
+		},
+	},
+};
 
-	const submit = (e) => {
+const ContactForm = () => {
+	const sendEmail = (e) => {
 		e.preventDefault();
 
-		if (contactName && contactEmail && contactMessage) {
-			const serviceId = 'service_5ktwefi';
-			const templateId = 'template_30bye5i';
-			const publicKey = 'DCsrAfFoL-T3VJznO';
+		emailjs
+			.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+			.then((res) => console.log('SUCCESS!', res.status, res.text))
+			.catch((error) => console.log('FAILED...', error));
 
-			emailjs
-				.sendForm(serviceId, templateId, form.current, publicKey)
-				.then((response) => console.log(response.text))
-				.then((error) => console.log(error.text));
-
-			setContactName('');
-			setContactEmail('');
-			setContactMessage('');
-			setEmailSent(true);
-		} else {
-			alert('Please fill in all fields.');
-		}
+		setFormState((formState) => ({
+			...formState,
+			isValid: false,
+			values: {},
+			touched: {},
+			errors: {},
+		}));
 	};
 
-	return (
-		<section id='contact'>
-			<div className='row'>
-				<div className='eight columns'>
-					<form
-						ref={form}
-						onSubmit={submit}
-						id='contactForm'
-						name='contactForm'>
-						<fieldset>
-							<div class='user-box'>
-								<label htmlFor='contactName'>
-									Name <span className='required'>*</span>
-								</label>
-								<input
-									required=''
-									name=''
-									type='text'
-									size='35'
-									id='contactName'
-									// name='contactName'
-									value={contactName}
-									onChange={(e) => setContactName(e.target.value)}
-								/>
-								{/* 
-								<input
-									type='text'
-									
-								/> */}
-							</div>
-							<div>
-								<label htmlFor='contactEmail'>
-									Email <span className='required'>*</span>
-								</label>
-								<input
-									type='text'
-									size='35'
-									id='contactEmail'
-									name='contactEmail'
-									value={contactEmail}
-									onChange={(e) => setContactEmail(e.target.value)}
-								/>
-							</div>
-							<div>
-								<label htmlFor='contactMessage'>
-									Message <span className='required'>*</span>
-								</label>
-								<textarea
-									cols='34'
-									rows='5'
-									id='contactMessage'
-									name='contactMessage'
-									value={contactMessage}
-									onChange={(e) =>
-										setContactMessage(e.target.value)
-									}></textarea>
-							</div>
-							<div>
-								<button className='submit'>Send</button>
-								<span id='image-loader'>
-									<img alt='' src='images/loader.gif' />
-								</span>
-							</div>
-						</fieldset>
-					</form>
+	const [formState, setFormState] = useState({
+		isValid: false,
+		values: {},
+		touched: {},
+		errors: {},
+	});
 
-					{/* <div id='message-warning'> Error boy</div>
-					<div id='message-success'>
-						<i className='fa fa-check'></i>Your message was sent, thank you!
-						<br />
-					</div> */}
-				</div>
-			</div>
-		</section>
+	useEffect(() => {
+		const errors = validate(formState.values, schema);
+
+		setFormState((formState) => ({
+			...formState,
+			isValid: errors ? false : true,
+			errors: errors || {},
+		}));
+	}, [formState.values]);
+
+	const handleChange = (e) => {
+		e.persist();
+
+		setFormState((formState) => ({
+			...formState,
+			values: {
+				...formState.values,
+				[e.target.name]:
+					e.target.type === 'checkbox' ? e.target.checked : e.target.value,
+			},
+			touched: {
+				...formState.touched,
+				[e.target.name]: true,
+			},
+		}));
+	};
+
+	const hasError = (field) =>
+		formState.touched[field] && formState.errors[field] ? true : false;
+
+	return (
+		<div>
+			<form headers='application/json' name='contact-form' onSubmit={sendEmail}>
+				<Grid container spacing={2}>
+					<Grid item xs={12}>
+						<Typography variant='h4' align='center'>
+							<strong>Contact Form</strong>
+						</Typography>
+						<Typography variant='h6' color='textSecondary' align='center'>
+							Contact Us
+						</Typography>
+					</Grid>
+					<Grid item xs={12} sm={6}>
+						<TextField
+							placeholder='Name'
+							label='Name *'
+							variant='outlined'
+							size='medium'
+							name='name'
+							id='name'
+							fullWidth
+							helperText={hasError('name') ? formState.errors.name[0] : null}
+							error={hasError('name')}
+							onChange={handleChange}
+							type='text'
+							value={formState.values.name || ''}
+						/>
+					</Grid>
+					<Grid item xs={12} sm={6}>
+						<TextField
+							placeholder='E-mail'
+							label='E-mail *'
+							variant='outlined'
+							size='medium'
+							name='email'
+							fullWidth
+							helperText={hasError('email') ? formState.errors.email[0] : null}
+							error={hasError('email')}
+							onChange={handleChange}
+							type='email'
+							value={formState.values.email || ''}
+						/>
+					</Grid>
+					<Grid item xs={12}>
+						<Button
+							size='large'
+							variant='contained'
+							type='submit'
+							color='primary'
+							disabled={!formState.isValid}>
+							Send
+						</Button>
+					</Grid>
+				</Grid>
+			</form>
+		</div>
 	);
 };
 
-export default Contact;
+export default ContactForm;
