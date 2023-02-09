@@ -82,14 +82,6 @@ const ContactForm = () => {
 		<div>
 			<form headers='application/json' name='contact-form' onSubmit={sendEmail}>
 				<Grid container spacing={2}>
-					<Grid item xs={12}>
-						<Typography variant='h4' align='center'>
-							<strong>Contact Form</strong>
-						</Typography>
-						<Typography variant='h6' color='textSecondary' align='center'>
-							Contact Us
-						</Typography>
-					</Grid>
 					<Grid item xs={12} sm={6}>
 						<TextField
 							placeholder='Name'
