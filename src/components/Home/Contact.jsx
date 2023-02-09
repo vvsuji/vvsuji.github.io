@@ -4,8 +4,8 @@ import validate from 'validate.js';
 import emailjs from 'emailjs-com';
 
 const USER_ID = process.env.REACT_APP_EMAILJS_USERID;
-const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATEID;
-const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICEID;
+const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_template_b7565wv;
+const SERVICE_ID = process.env.REACT_APP_EMAILJS_service_3p97yie;
 
 const schema = {
 	name: {
@@ -24,6 +24,7 @@ const schema = {
 };
 
 const ContactForm = () => {
+	const [contactMessage, setContactMessage] = useState('');
 	const sendEmail = (e) => {
 		e.preventDefault();
 
@@ -113,6 +114,18 @@ const ContactForm = () => {
 							value={formState.values.email || ''}
 						/>
 					</Grid>
+					<div>
+						<label htmlFor='contactMessage'>
+							Message <span className='required'>*</span>
+						</label>
+						<textarea
+							cols='34'
+							rows='5'
+							id='contactMessage'
+							name='contactMessage'
+							value={contactMessage}
+							onChange={(e) => setContactMessage(e.target.value)}></textarea>
+					</div>
 					<Grid item xs={12}>
 						<Button
 							size='large'
