@@ -615,6 +615,10 @@ button:focus {
   .footer-body {
     text-align: center !important;
   }
+
+ /* .home-about-section, img {
+  display: inline !important;
+ } */
 }
 
 .footer h3 {

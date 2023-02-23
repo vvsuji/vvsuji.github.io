@@ -6,7 +6,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
 import Resume from './components/Resume/Resume';
-import Contact from './components/Home/Contact';
+// import Contact from './components/Home/Contact';
 import {
 	HashRouter as Router,
 	Route,

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Contact from './Contact';
+// import Contact from './Contact';
 import pfp from '../../assets/sfpfp.png';
 
 function Home() {
 	return (
 		<section>
 			<Container fluid className='home-about-section' id='home'>
-				<Container className='home-content' style={{ left: 50 }}>
+				<Container className='home-content' style={{}}>
 					<Row>
 						<Col md={9} className='home-header'>
 							<h1 md={3} className='heading-name'>
@@ -43,7 +43,7 @@ function Home() {
 					</Row>
 				</Container>
 			</Container>
-			<Container fluid className='home-about-section' id='about'>
+			{/* <Container fluid className='home-about-section' id='about'>
 				<Container>
 					<Row>
 						<Col md={12} className='home-about-social'>
@@ -53,7 +53,7 @@ function Home() {
 					</Row>
 					<Contact />
 				</Container>
-			</Container>
+			</Container> */}
 		</section>
 	);
 }
