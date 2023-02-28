@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 // import Contact from './Contact';
+// import ThemeProvider from 'react-bootstrap';
+
 import pfp from '../../assets/sfpfp.png';
 
 function Home() {
@@ -37,7 +39,7 @@ function Home() {
 								src={pfp}
 								alt='home pic'
 								className='img-fluid'
-								style={{ maxHeight: '450px', borderRadius: '99px' }}
+								// style={{ maxHeight: '450px', borderRadius: '99px' }}
 							/>
 						</Col>
 					</Row>
