@@ -34,16 +34,17 @@ function Home() {
 								</i>
 							</p>
 						</Col>
-						<Col md={4} style={{ position: 'absolute', right: 30 }}>
-							<img
-								src={pfp}
-								alt='home pic'
-								className='img-fluid'
-								// style={{ maxHeight: '450px', borderRadius: '99px' }}
-							/>
-						</Col>
 					</Row>
 				</Container>
+				<Col md={4} style={{ right: 30, top: 220 }}>
+					<img
+						src={pfp}
+						alt='home pic'
+						// className='img-fluid'
+						id='home-img'
+						// style={{ maxHeight: '450px', borderRadius: '99px' }}
+					/>
+				</Col>
 			</Container>
 			{/* <Container fluid className='home-about-section' id='about'>
 				<Container>
