@@ -29,7 +29,7 @@ function Home() {
 								<i>
 									<b className='purple'>
 										{' '}
-										React, Javascript, Python, HTML, CSS{' '}
+										React, Next.js, Typescript, Tailwind, Java{' '}
 									</b>
 								</i>
 							</p>
