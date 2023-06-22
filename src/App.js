@@ -4,7 +4,6 @@ import Navbar from './components/Nav/NavBar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
-// import Footer from './components/Footer/Footer';
 import Resume from './components/Resume/Resume';
 // import Contact from './components/Home/Contact';
 import {
@@ -17,7 +16,6 @@ import ScrollToTop from './components/ScrollToTop';
 import './style.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Particle from './components/Particle';
 
 function App() {
 	const [load, updateLoad] = useState(true);
@@ -34,7 +32,6 @@ function App() {
 		<Router>
 			<Preloader load={load} />
 			<div className='App' id={load ? 'no-scroll' : 'scroll'}>
-				{/* <Particle /> */}
 				<Navbar />
 				<ScrollToTop />
 				<Routes>

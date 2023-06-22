@@ -2,13 +2,11 @@ import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import Github from "./Github";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-// import Particle from '../Particle';
+import Aboutcard from './AboutCard';
 
 function About() {
 	return (
 		<Container fluid className='about-section'>
-			{/* <Particle /> */}
 			<Container>
 				<Row style={{ justifyContent: 'center', padding: '10px' }}>
 					<Col
