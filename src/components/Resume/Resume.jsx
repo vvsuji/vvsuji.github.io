@@ -25,13 +25,13 @@ function Resume() {
 						variant='primary'
 						href={pdf}
 						target='_blank'
-						style={{ maxWidth: '250px' }}>
+						style={{ maxWidth: '50px' }}>
 						<AiOutlineDownload />
-						&nbsp;Download Resume
+						{/* TODO: move button to less annoying place */}
 					</Button>
 				</Row>
 
-				<Row className='resume'>
+				<Row className='resume' style={{ paddingTop: '10px' }}>
 					<Document file={pdf} className='d-flex justify-content-center'>
 						<Page pageNumber={1} scale={width > 786 ? 1.4 : 0.6} />
 					</Document>

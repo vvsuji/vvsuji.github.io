@@ -316,9 +316,8 @@ button:focus {
 }
 
 #home-img {
-  width: 200px !important;
-  height: 200px !important;
-  border-radius: 50%;
+  /* width: 200px !important;
+  height: 200px !important; */
   border: 2px solid #cd5ff8;
   box-shadow: 0 0 0 4px #181a27;
   position: absolute !important;

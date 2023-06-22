@@ -11,13 +11,11 @@ function Home() {
 			<Container fluid className='home-about-section' id='home'>
 				<Container className='home-content' style={{}}>
 					<Row>
-						<Col md={9} className='home-header'>
+						<Col className='home-header'>
 							<h1 md={3} className='heading-name'>
 								Hi! I'm
 								<strong className='main-name'> Suji Falcon </strong>
 							</h1>
-						</Col>
-						<Col md={7} className='home-about-description'>
 							<p className='home-about-body'>
 								Software engineer with an extensive background in IT and game
 								modding. I fell in love with programming at the age of 10 making
@@ -34,29 +32,20 @@ function Home() {
 								</i>
 							</p>
 						</Col>
-					</Row>
-				</Container>
-				<Col md={4} style={{ right: 30, top: 220 }}>
-					<img
-						src={pfp}
-						alt='home pic'
-						// className='img-fluid'
-						id='home-img'
-						// style={{ maxHeight: '450px', borderRadius: '99px' }}
-					/>
-				</Col>
-			</Container>
-			{/* <Container fluid className='home-about-section' id='about'>
-				<Container>
-					<Row>
-						<Col md={12} className='home-about-social'>
-							<h2>CONNECT WITH ME</h2>
-							<br />
+						<Col>
+							<img
+								src={pfp}
+								className='img-fluid rounded-circle'
+								alt='home pic'
+								id='home-img'
+							/>
 						</Col>
+						{/* <Col className='home-about-description'>
+							<Col style={{ right: 30, top: 220 }}></Col>
+						</Col> */}
 					</Row>
-					<Contact />
 				</Container>
-			</Container> */}
+			</Container>
 		</section>
 	);
 }
