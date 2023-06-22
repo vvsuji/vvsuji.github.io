@@ -11,7 +11,7 @@ function Home() {
 			<Container fluid className='home-about-section' id='home'>
 				<Container className='home-content' style={{}}>
 					<Row>
-						<Col className='home-header'>
+						<Col className='home-header' sm={8}>
 							<h1 md={3} className='heading-name'>
 								Hi! I'm
 								<strong className='main-name'> Suji Falcon </strong>
@@ -32,10 +32,11 @@ function Home() {
 								</i>
 							</p>
 						</Col>
-						<Col>
+						{/* <Col sm={1}></Col> */}
+						<Col sm={4}>
 							<img
 								src={pfp}
-								className='img-fluid rounded-circle'
+								className='img-fluid rounded-circle float-right'
 								alt='home pic'
 								id='home-img'
 							/>

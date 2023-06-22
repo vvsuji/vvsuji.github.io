@@ -316,8 +316,8 @@ button:focus {
 }
 
 #home-img {
-  /* width: 200px !important;
-  height: 200px !important; */
+  width: 300px !important;
+  height: 300px !important;
   border: 2px solid #cd5ff8;
   box-shadow: 0 0 0 4px #181a27;
   position: absolute !important;
@@ -345,8 +345,8 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding: 50px !important;
+  /* padding-top: 30px !important; */
 }
 
 .home-about-description {
