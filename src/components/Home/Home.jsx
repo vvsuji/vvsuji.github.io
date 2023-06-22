@@ -41,9 +41,6 @@ function Home() {
 								id='home-img'
 							/>
 						</Col>
-						{/* <Col className='home-about-description'>
-							<Col style={{ right: 30, top: 220 }}></Col>
-						</Col> */}
 					</Row>
 				</Container>
 			</Container>
