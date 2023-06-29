@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './ProjectCards';
-import hangman from '../../assets/hangman.png';
+import wgfah from '../../assets/wgfah.png';
 import shills from '../../assets/shills.png';
 import legendaryslayers from '../../assets/legendaryslayers.png';
 
@@ -16,12 +16,12 @@ function Projects() {
 				<Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
 					<Col md={4} className='project-card'>
 						<ProjectCard
-							imgPath={hangman}
+							imgPath={wgfah}
 							isBlog={false}
-							title='Hangman'
-							description='Front-end game using Vanilla JavaScript, HTML, and CSS. Visually engaging game and fun to play'
-							ghLink='https://github.com/vvsuji/hangman'
-							demoLink='https://vvsuji.github.io/hangman/'
+							title='We Got Food @ Home'
+							description='Gamification app utilizing the GPT-4 API to incentivize users to cook at home by inputting ingredients and outputting relevant recipes.'
+							ghLink='https://github.com/vvsuji/we-got-food-at-home'
+							demoLink='https://we-got-food-at-home.netlify.app/home'
 						/>
 					</Col>
 
@@ -30,7 +30,7 @@ function Projects() {
 							imgPath={shills}
 							isBlog={false}
 							title='$hills: Brag about your financial losses - or wins'
-							description="Full-CRUD Social Media clone inspired by Twitter with a fun 'financial' twist. Created with React.js and Tailwindcss on the front-end and a Python/Django Back-end."
+							description="Full-CRUD Social Media clone inspired by Twitter with a fun 'financial' twist."
 							ghLink='https://github.com/SEI-Buffleheads/twitter-clone-frontend'
 							demoLink='https://shill-social.netlify.app'
 						/>
@@ -41,7 +41,7 @@ function Projects() {
 							imgPath={legendaryslayers}
 							isBlog={false}
 							title='Legendary Slayers'
-							description='Full CRUD reimagination of the League of Legends website. Users are able to save their favorite champions and items to their profile page.'
+							description='Full CRUD reimagination of the League of Legends website.'
 							ghLink='https://github.com/SEI-Buffleheads/twitter-clone-frontend'
 							demoLink='https://legendsofleague.netlify.app/'
 						/>
