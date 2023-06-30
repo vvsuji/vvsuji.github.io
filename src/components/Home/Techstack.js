@@ -1,5 +1,5 @@
 import React from "react";
-import {Col, Row} from "react-bootstrap";
+import { Col, Row } from 'react-bootstrap';
 import {
 	DiJavascript1,
 	DiReact,
@@ -31,125 +31,61 @@ import {
 	SiPostman,
 	SiHeroku,
 	SiVercel,
+	SiSpring,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
 function Techstack() {
+	const techStackItems = [
+		{ icon: DiReact, text: 'React' },
+		{ icon: DiJavascript1, text: 'Javascript' },
+		{ icon: TbBrandNextjs, text: 'Next.js' },
+		{ icon: DiSass, text: 'Sass' },
+		{ icon: SiTailwindcss, text: 'Tailwindcss' },
+		{ icon: DiFirebase, text: 'Firebase' },
+		{ icon: DiPython, text: 'Python' },
+		{ icon: DiNodejs, text: 'Node.js' },
+		{ icon: DiMongodb, text: 'MongoDB' },
+		{ icon: DiPostgresql, text: 'PostgreSQL' },
+		{ icon: SiHeroku, text: 'Heroku' },
+		{ icon: SiVercel, text: 'Vercel' },
+		{ icon: SiPostman, text: 'Postman' },
+		{ icon: SiFigma, text: 'Figma' },
+		{ icon: SiFlask, text: 'Flask' },
+		{ icon: SiCsharp, text: 'C#' },
+		{ icon: DiMysql, text: 'MySQL' },
+		{ icon: DiGit, text: 'Git' },
+		{ icon: DiDocker, text: 'Docker' },
+		{ icon: DiLinux, text: 'Linux' },
+		{ icon: DiUbuntu, text: 'Ubuntu' },
+		{ icon: DiJava, text: 'Java' },
+		{ icon: SiSpring, text: 'Spring' },
+		{ icon: DiSqllite, text: 'SQLite' },
+		{ icon: SiCplusplus, text: 'C++' },
+		{ icon: DiAws, text: 'AWS' },
+		{ icon: DiDjango, text: 'Django' },
+		{ icon: SiGnubash, text: 'Bash' },
+		{ icon: SiVuedotjs, text: 'Vue.js' },
+		{ icon: SiKotlin, text: 'Kotlin' },
+	];
+
 	return (
 		<Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
-			<Col md={1} className='tech-icons '>
-				<DiJavascript1 />
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiDjango />
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiNodejs />
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiReact />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiPython />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiMongodb />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiPostgresql />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiGit />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<SiCsharp />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<SiCplusplus />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<SiGnubash />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiJava />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiDocker />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiFirebase />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiAws />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiLinux />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiSass />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiSqllite />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<SiTailwindcss />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<SiVuedotjs />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<TbBrandNextjs />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiMysql />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<SiKotlin />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<SiFigma />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<SiFlask />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<DiUbuntu />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<SiPostman />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<SiHeroku />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
-			<Col md={1} className='tech-icons '>
-				<SiVercel />
-				<p style={{ fontSize: '.18em' }}></p>
-			</Col>
+			{techStackItems.map((item, index) => (
+				<Col key={index} md={1} className='tech-icons'>
+					<div
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							alignItems: 'center',
+						}}>
+						{React.createElement(item.icon)}
+						<p style={{ fontSize: '.18em', marginTop: '4px', marginBottom: 0 }}>
+							{item.text}
+						</p>
+					</div>
+				</Col>
+			))}
 		</Row>
 	);
 }

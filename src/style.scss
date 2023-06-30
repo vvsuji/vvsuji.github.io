@@ -7,7 +7,6 @@ $color_3: white;
 $color_4: whitesmoke;
 $color_5: #cd5ff8;
 $color_6: #700c86;
-$mynewcolor:#77cccc;
 $font-family_1: sans-serif;
 $background-color_1: #0c0513;
 $background-color_2: #1b1a2ea9;
@@ -101,7 +100,22 @@ body {
 }
 
 .btn-primary {
-  @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+  line-height: 1.4em !important;
+	background-color: $background-color_7 !important;
+  border-color: $border-color_2 !important;
+	padding: 0.25rem 1.1rem !important;
+	vertical-align: middle !important;
+	text-align: center !important;
+	&:hover {
+		transform: translateY(-2px) !important;
+		background-color: $background-color_8 !important;
+	}
+	&::after {
+		display: none !important;
+	}
+}
+.img-fluid {
+	max-height: 450px !important;
 }
 
 #preloader {
@@ -257,7 +271,7 @@ body {
 	padding-top: 30px !important;
 }
 .home-content {
-	padding: 9rem 0 2rem !important;
+	padding: 6rem 0 2rem !important;
 	color: $color_4;
 	text-align: left;
 }
@@ -279,10 +293,13 @@ body {
 	box-shadow: 0 0 0 4px #181a27;
 	position: absolute !important;
 }
-.pfp {
-	justify-content: center !important;
-	padding-top: 9em !important;
+
+.pfp-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .home-about-section {
 	position: relative;
 	padding: 50px !important;
@@ -360,7 +377,7 @@ body {
 	color: $color_3 !important;
 	font-size: 2.3em !important;
 	font-weight: 500 !important;
-	padding-top: 30px !important;
+	padding-top: 20px !important;
 }
 
 .tech-icons {
@@ -489,14 +506,15 @@ body {
 }
 .fork-btn-inner {
 	line-height: 1.4em !important;
-	background-color: $background-color_7 !important;
+	background-color: $background-color_8 !important;
+  border-color: $border-color_2 !important;
 	padding: 0.25rem 1.1rem !important;
 	vertical-align: middle !important;
 	text-align: center !important;
 	&:hover {
 		transform: translateY(-2px) !important;
 		background-color: $background-color_8 !important;
-		border-color: $border-color_3 !important;
+    border-color: $border-color_1 !important;
 	}
 	&::after {
 		display: none !important;

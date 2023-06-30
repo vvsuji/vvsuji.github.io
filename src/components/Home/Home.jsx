@@ -37,8 +37,7 @@ function Home() {
 								</i> */}
 							</p>
 						</Col>
-						{/* <Col sm={1}></Col> */}
-						<Col sm={4}>
+						<Col className='pfp-col' px={0}>
 							<img
 								src={pfp}
 								className='img-fluid rounded-circle float-right'
