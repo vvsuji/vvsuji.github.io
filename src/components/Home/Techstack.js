@@ -47,30 +47,30 @@ function Techstack() {
 		{ icon: DiNodejs, text: 'Node.js' },
 		{ icon: DiMongodb, text: 'MongoDB' },
 		{ icon: DiPostgresql, text: 'PostgreSQL' },
-		{ icon: SiHeroku, text: 'Heroku' },
+		// { icon: SiHeroku, text: 'Heroku' },
 		{ icon: SiVercel, text: 'Vercel' },
 		{ icon: SiPostman, text: 'Postman' },
 		{ icon: SiFigma, text: 'Figma' },
 		{ icon: SiFlask, text: 'Flask' },
 		{ icon: SiCsharp, text: 'C#' },
 		{ icon: DiMysql, text: 'MySQL' },
-		{ icon: DiGit, text: 'Git' },
+		// { icon: DiGit, text: 'Git' },
 		{ icon: DiDocker, text: 'Docker' },
 		{ icon: DiLinux, text: 'Linux' },
 		{ icon: DiUbuntu, text: 'Ubuntu' },
 		{ icon: DiJava, text: 'Java' },
 		{ icon: SiSpring, text: 'Spring' },
 		{ icon: DiSqllite, text: 'SQLite' },
-		{ icon: SiCplusplus, text: 'C++' },
+		// { icon: SiCplusplus, text: 'C++' },
 		{ icon: DiAws, text: 'AWS' },
 		{ icon: DiDjango, text: 'Django' },
 		{ icon: SiGnubash, text: 'Bash' },
-		{ icon: SiVuedotjs, text: 'Vue.js' },
+		// { icon: SiVuedotjs, text: 'Vue.js' },
 		{ icon: SiKotlin, text: 'Kotlin' },
 	];
 
 	return (
-		<Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
+		<Row style={{ justifyContent: 'center' }}>
 			{techStackItems.map((item, index) => (
 				<Col key={index} md={1} className='tech-icons'>
 					<div

@@ -9,9 +9,9 @@ function Home() {
 	return (
 		<section>
 			<Container fluid className='home-about-section' id='home'>
-				<Container className='home-content' style={{}}>
+				<Container className='home-content'>
 					<Row>
-						<Col className='home-header' sm={8}>
+						<Col className='home-header' sm={8} px={0}>
 							<h1 md={3} className='heading-name'>
 								Hi! I'm <strong className='purple'>Suji Falcon, </strong>a
 								software engineer based in{' '}
