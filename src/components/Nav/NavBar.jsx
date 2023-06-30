@@ -9,7 +9,6 @@ import {
 	AiFillStar,
 	AiOutlineHome,
 	AiOutlineFundProjectionScreen,
-	AiOutlineUser,
 } from 'react-icons/ai';
 import { CgGitFork } from 'react-icons/cg';
 import { CgFileDocument } from 'react-icons/cg';

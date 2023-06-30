@@ -6,7 +6,7 @@ import {
 	DiNodejs,
 	DiMongodb,
 	DiPython,
-	DiGit,
+	// DiGit,
 	DiDjango,
 	DiPostgresql,
 	DiMysql,
@@ -20,16 +20,16 @@ import {
 	DiUbuntu,
 } from 'react-icons/di';
 import {
-	SiCplusplus,
+	// SiCplusplus,
 	SiCsharp,
 	SiKotlin,
 	SiGnubash,
 	SiTailwindcss,
-	SiVuedotjs,
+	// SiVuedotjs,
 	SiFigma,
 	SiFlask,
 	SiPostman,
-	SiHeroku,
+	// SiHeroku,
 	SiVercel,
 	SiSpring,
 } from 'react-icons/si';
