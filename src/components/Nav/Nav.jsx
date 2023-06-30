@@ -32,11 +32,6 @@ function NavBar() {
 					<p>Home</p>
 				</Link>
 
-				<Link to='/about' className='link'>
-					<AiOutlineUser style={{ marginBottom: '2px' }} />
-					<p>About</p>
-				</Link>
-
 				<Link to='/projects' className='link'>
 					<AiTwotoneThunderbolt style={{ marginBottom: '2px' }} />
 					<p>Projects</p>

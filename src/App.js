@@ -2,10 +2,8 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from './components/Nav/NavBar';
 import Home from './components/Home/Home';
-import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Resume from './components/Resume/Resume';
-// import Contact from './components/Home/Contact';
 import {
 	HashRouter as Router,
 	Route,
@@ -37,11 +35,9 @@ function App() {
 				<Routes>
 					<Route exact path='/' element={<Home />} />
 					<Route path='/project' element={<Projects />} />
-					<Route path='/about' element={<About />} />
 					<Route path='/resume' element={<Resume />} />
 					<Route path='*' element={<Navigate to='/' />} />
 				</Routes>
-				{/* <Footer /> */}
 			</div>
 		</Router>
 	);

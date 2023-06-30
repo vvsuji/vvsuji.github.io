@@ -247,9 +247,7 @@ body {
 .nav-link {
 	padding: 0.8rem 1rem !important;
 }
-.home-header {
-	padding-top: 80px !important;
-}
+
 .home-section {
 	position: relative;
 	z-index: -1;
@@ -362,37 +360,34 @@ body {
 	color: $color_3 !important;
 	font-size: 2.3em !important;
 	font-weight: 500 !important;
-	padding-top: 10px !important;
+	padding-top: 30px !important;
 }
-.about-section {
-	position: relative !important;
-	padding-top: 150px !important;
-	padding-bottom: 30px !important;
-	background-image: var(--section-background-color) !important;
-	color: $color_3 !important;
-}
+
 .tech-icons {
-	font-size: 4.5em !important;
-	margin: 15px !important;
-	padding: 10px !important;
-	opacity: 0.93 !important;
-	border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
-	vertical-align: middle !important;
-	text-align: center !important;
-	border-radius: 5px !important;
-	display: table !important;
-	box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
-	overflow: hidden !important;
-	transition: all 0.4s ease 0s !important;
-	&:hover {
-		transform: scale(1.05) !important;
-		overflow: hidden !important;
-		border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
-	}
+  font-size: 3em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+  
+  &:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  }
 }
+
 .tech-icon-images {
 	padding: 20px !important;
-	line-height: 1.6 !important;
+	// line-height: 1.6 !important;
 }
 .quote-card-view {
 	border: none !important;
@@ -510,6 +505,8 @@ body {
 .img-fluid {
 	max-height: 450px !important;
 }
+
+
 @media (max-width: 767px) {
 	.navbar {
 		padding: 1rem 2rem !important;
@@ -544,7 +541,7 @@ body {
 		box-shadow: 0 0 0 4px #181a27;
 		position: sticky !important;
 	}
-
+  
   .project-card {
     width: 26% !important;
   }
@@ -566,3 +563,10 @@ body {
 		padding-left: 15px !important;
 	}
 }
+
+@media (min-width: 768px) {
+  .col-md-1 {
+    width: 5.3333% !important;
+  }
+}
+
