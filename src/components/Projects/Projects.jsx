@@ -13,8 +13,8 @@ function Projects() {
 					My Recent <strong className='purple'>Works </strong>
 				</h1>
 				<p style={{ color: 'grey' }}>Here are my recent projects.</p>
-				<Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
-					<Col md={4} className='project-card'>
+				<Row style={{ justifyContent: 'space-evenly', paddingBottom: '10px' }}>
+					<Col md={3} className='project-card'>
 						<ProjectCard
 							imgPath={wgfah}
 							isBlog={false}
@@ -25,7 +25,7 @@ function Projects() {
 						/>
 					</Col>
 
-					<Col md={4} className='project-card'>
+					<Col md={3} className='project-card'>
 						<ProjectCard
 							imgPath={shills}
 							isBlog={false}
@@ -36,7 +36,7 @@ function Projects() {
 						/>
 					</Col>
 
-					<Col md={4} className='project-card'>
+					<Col md={3} className='project-card'>
 						<ProjectCard
 							imgPath={legendaryslayers}
 							isBlog={false}
