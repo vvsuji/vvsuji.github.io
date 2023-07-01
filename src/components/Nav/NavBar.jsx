@@ -6,12 +6,12 @@ import logo from '../../assets/sflogo.png';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import {
-	AiFillStar,
 	AiOutlineHome,
 	AiOutlineFundProjectionScreen,
+	AiOutlineLinkedin,
 } from 'react-icons/ai';
-import { CgGitFork } from 'react-icons/cg';
-import { CgFileDocument } from 'react-icons/cg';
+import { CgGitFork, CgFileDocument } from 'react-icons/cg';
+import {} from 'react-icons/cg';
 
 function NavBar() {
 	const [expand, updateExpanded] = useState(false);
@@ -78,13 +78,20 @@ function NavBar() {
 							</Nav.Link>
 						</Nav.Item>
 
-						<Nav.Item className='fork-btn'>
+						<Nav.Item className='social-btn'>
 							<Button
 								href='https://github.com/vvsuji'
 								target='_blank'
-								className='fork-btn-inner'>
+								className='social-btn-inner'>
 								<CgGitFork style={{ fontSize: '1.2em' }} />{' '}
-								<AiFillStar style={{ fontSize: '1.1em' }} />
+							</Button>
+						</Nav.Item>
+						<Nav.Item className='social-btn'>
+							<Button
+								href='https://www.linkedin.com/in/vvsuji'
+								target='_blank'
+								className='social-btn-inner'>
+								<AiOutlineLinkedin style={{ fontSize: '1.2em' }} />{' '}
 							</Button>
 						</Nav.Item>
 					</Nav>

@@ -418,15 +418,14 @@ body {
 	padding-top: 90px !important;
 }
 
-.fork-btn {
-	font-size: 1.1em !important;
+.social-btn {
 	padding-top: 7px !important;
 }
-.fork-btn-inner {
+.social-btn-inner {
 	line-height: 1.4em !important;
 	background-color: $background-color_8 !important;
   border-color: $border-color_2 !important;
-	padding: 0.25rem 1.1rem !important;
+	padding: 0.25rem 0.6rem !important;
 	vertical-align: middle !important;
 	text-align: center !important;
 	&:hover {
