@@ -20,20 +20,9 @@ function Resume() {
 	return (
 		<div>
 			<Container fluid className='resume-section'>
-				<Row style={{ justifyContent: 'center', position: 'relative' }}>
-					<Button
-						variant='primary'
-						href={pdf}
-						target='_blank'
-						style={{ maxWidth: '50px' }}>
-						<AiOutlineDownload />
-						{/* TODO: move button to less annoying place */}
-					</Button>
-				</Row>
-
-				<Row className='resume' style={{ paddingTop: '10px' }}>
+				<Row className='resume'>
 					<Document file={pdf} className='d-flex justify-content-center'>
-						<Page pageNumber={1} scale={width > 786 ? 1.4 : 0.6} />
+						<Page pageNumber={1} scale={width > 786 ? 0.75 : 0.5} />
 					</Document>
 				</Row>
 			</Container>

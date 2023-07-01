@@ -46,7 +46,7 @@ function Home() {
 							/>
 						</Col>
 					</Row>
-					<h1 className='project-heading'>
+					<h1 className='pro-skill'>
 						Professional <strong className='purple'>Skillset </strong>
 					</h1>
 					<Techstack />
