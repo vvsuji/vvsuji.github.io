@@ -18,14 +18,8 @@ function Home() {
 								<strong className='purple'> NYC.</strong>
 							</h1>
 							<p className='home-about-body'>
-								With over 10 years of programming experience from creating
-								websites for friends at a young age to my current expertise in
-								game modding, my love for programming has always been a driving
-								force in my career. I bring a unique blend of software
-								engineering skills and a strong background in hardware
-								customization and system integration, allowing me to deliver
-								tailor-made computing solutions that optimize performance and
-								user experience. Let's build something together!
+								Seasoned programmer with a focus on game modding and AI
+								implementation. Let's build something together!
 								<br />
 								{/* <br />I currently work with
 								<i>
