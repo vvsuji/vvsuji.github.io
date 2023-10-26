@@ -13,13 +13,11 @@ function Home() {
 					<Row>
 						<Col className='home-header' sm={8} px={0}>
 							<h1 md={3} className='heading-name'>
-								Hi! I'm <strong className='purple'>Suji Falcon, </strong>a
-								software engineer based in{' '}
-								<strong className='purple'> NYC.</strong>
+								<strong className='purple'>Suji Falcon </strong>
 							</h1>
 							<p className='home-about-body'>
-								Seasoned programmer with a focus on game modding and AI
-								implementation. Let's build something together!
+								Software engineer, frontend & app developer with a focus on game
+								modding and AI implementation.
 								<br />
 								{/* <br />I currently work with
 								<i>
