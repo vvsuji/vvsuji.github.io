@@ -33,7 +33,7 @@ function NavBar() {
 			fixed='top'
 			expand='md'
 			className={navColour ? 'sticky' : 'navbar'}>
-			<Container>
+			<Container className='nav-container'>
 				<Navbar.Brand
 					href='/'
 					className='d-flex'
@@ -85,8 +85,6 @@ function NavBar() {
 								className='social-btn-inner'>
 								<CgGitFork style={{ fontSize: '1.2em' }} />{' '}
 							</Button>
-						</Nav.Item>
-						<Nav.Item className='social-btn'>
 							<Button
 								href='https://www.linkedin.com/in/vvsuji'
 								target='_blank'
@@ -94,6 +92,7 @@ function NavBar() {
 								<AiOutlineLinkedin style={{ fontSize: '1.2em' }} />{' '}
 							</Button>
 						</Nav.Item>
+						<Nav.Item className='social-btn'></Nav.Item>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>

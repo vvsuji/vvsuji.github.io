@@ -425,6 +425,7 @@ body {
 .social-btn {
 	padding-top: 7px !important;
 }
+
 .social-btn-inner {
 	line-height: 1.4em !important;
 	background-color: $background-color_8 !important;
@@ -432,6 +433,7 @@ body {
 	padding: 0.25rem 0.6rem !important;
 	vertical-align: middle !important;
 	text-align: center !important;
+  margin-left: 10px !important;
 	&:hover {
 		transform: translateY(-2px) !important;
 		background-color: $background-color_8 !important;
@@ -444,26 +446,44 @@ body {
 
 @media (max-width: 767px) {
 	.navbar {
-		padding: 1rem 2rem !important;
+		padding: 0rem !important;
 		font-size: 1.4rem !important;
-		background-color: $background-color_5 !important;
 	}
 	.navbar-nav {
 		.nav-item {
+      margin-left: 0px !important;
 			a {
 				&::after {
 					display: none !important;
 				}
 			}
 		}
-	}
+	} 
 
-	.nav-link {
-		padding: 0.7rem 1rem !important;
-	}
+  .d-flex {
+    padding-left: 16px !important;
+  }
+
+  .navbar-toggler.collapsed {
+    margin-right: 15px !important;
+    padding-top: 13px !important;
+  }
+
+  .nav-container{
+    padding: 0px !important;
+  }
+
+  .navbar-collapse {
+    background-color: $background-color_5 !important;
+
+  }
 
   .heading-name {
     text-align: center !important;
+  }
+
+  .home-content {
+    padding: 5rem 0 0 !important;
   }
 
   .home-about-body {
@@ -483,6 +503,7 @@ body {
   
   .pro-skill {
     padding-top: 30px !important;
+    text-align: center;
   }
   
   .project-card {
