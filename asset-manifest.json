@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e79dc12.css",
+    "main.css": "/static/css/main.36a0cef1.css",
     "main.js": "/static/js/main.2f862b60.js",
     "static/js/787.411e509e.chunk.js": "/static/js/787.411e509e.chunk.js",
     "static/media/legendaryslayers.png": "/static/media/legendaryslayers.a213913c0a0eee0373c4.png",
@@ -10,12 +10,12 @@
     "static/media/SFSWE2023.pdf": "/static/media/SFSWE2023.a8ba6ecbb0d509ecc5e7.pdf",
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
-    "main.7e79dc12.css.map": "/static/css/main.7e79dc12.css.map",
+    "main.36a0cef1.css.map": "/static/css/main.36a0cef1.css.map",
     "main.2f862b60.js.map": "/static/js/main.2f862b60.js.map",
     "787.411e509e.chunk.js.map": "/static/js/787.411e509e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e79dc12.css",
+    "static/css/main.36a0cef1.css",
     "static/js/main.2f862b60.js"
   ]
 }
