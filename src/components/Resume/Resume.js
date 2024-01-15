@@ -6,6 +6,9 @@ import Particle from '../Particle';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function Resume() {
@@ -32,7 +35,7 @@ function Resume() {
 
 				<Row className='resume'>
 					<Document file={pdf} className='d-flex justify-content-center'>
-						<Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+						<Page pageNumber={1} scale={width > 786 ? 1.2 : 0.6} />
 					</Document>
 				</Row>
 

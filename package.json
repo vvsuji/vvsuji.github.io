@@ -6,6 +6,7 @@
 	"dependencies": {
 		"@emotion/react": "^11.10.5",
 		"@emotion/styled": "^11.10.5",
+		"@mikecousins/react-pdf": "^6.1.1",
 		"@mui/material": "^5.11.8",
 		"@react-pdf-viewer/core": "^3.10.0",
 		"@react-pdf/renderer": "^3.0.1",
@@ -14,7 +15,7 @@
 		"bootstrap": "^5.2.3",
 		"emailjs-com": "^3.2.0",
 		"eslint-config-react-app": "^7.0.1",
-		"pdfjs-dist": "^3.2.146",
+		"pdfjs-dist": "^2.12.313",
 		"react": "^18.2.0",
 		"react-bootstrap": "^2.7.0",
 		"react-dom": "^18.2.0",
