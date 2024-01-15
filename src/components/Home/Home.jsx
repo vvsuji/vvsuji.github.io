@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Techstack from './Techstack';
-// import Github from '../About/Github.js';
+import Particle from '../Particle';
+import Github from './Github';
 
 import pfp from '../../assets/sfpfp.png';
 
@@ -9,6 +10,7 @@ function Home() {
 	return (
 		<section>
 			<Container fluid className='home-about-section' id='home'>
+				<Particle />
 				<Container className='home-content'>
 					<Row>
 						<Col className='home-header' sm={8} px={0}>
@@ -45,7 +47,7 @@ function Home() {
 						Professional <strong className='purple'>Skillset </strong>
 					</h1>
 					<Techstack />
-					{/* <Github /> */}
+					<Github />
 				</Container>
 			</Container>
 		</section>

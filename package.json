@@ -22,6 +22,7 @@
 		"react-icons": "^4.7.1",
 		"react-pdf": "^6.2.0",
 		"react-router-dom": "^6.5.0",
+		"react-tsparticles": "^2.12.2",
 		"sass": "^1.63.6",
 		"validate.js": "^0.13.1",
 		"web-vitals": "^2.1.4"
