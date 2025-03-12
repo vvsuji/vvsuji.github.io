@@ -47,7 +47,7 @@ function Home() {
 						Professional <strong className='purple'>Skillset </strong>
 					</h1>
 					<Techstack />
-					<Github />
+					{/* <Github /> */}
 				</Container>
 			</Container>
 		</section>
