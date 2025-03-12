@@ -32,10 +32,10 @@ function NavBar() {
 					<p>Home</p>
 				</Link>
 
-				<Link to='/projects' className='link'>
+				{/* <Link to='/projects' className='link'>
 					<AiTwotoneThunderbolt style={{ marginBottom: '2px' }} />
 					<p>Projects</p>
-				</Link>
+				</Link> */}
 
 				<Link to='/resume' className='link'>
 					<CgFileDocument style={{ marginBottom: '2px' }} />
